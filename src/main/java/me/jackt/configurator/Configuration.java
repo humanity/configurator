@@ -6,7 +6,12 @@ public class Configuration {
 
     protected ConfigurationProvider normalProvider;
 
-    protected static final ConfigurationProvider defaultProvider;
+    protected static ConfigurationProvider defaultProvider;
+
+    public static void setDefaultProvider(DefaultProvider provider) {
+        defaultProvider = provider;
+    }
+
 
     static {
         defaultProvider = new DefaultProvider();
