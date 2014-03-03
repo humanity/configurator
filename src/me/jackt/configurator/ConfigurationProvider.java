@@ -1,4 +1,4 @@
-package me.jackt.configuratpr;
+package me.jackt.configurator;
 
 import java.util.Set;
 

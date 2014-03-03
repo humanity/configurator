@@ -1,7 +1,7 @@
-package me.jackt.configuratpr.me.jackt.configurator.providers;
+package me.jackt.configurator.me.jackt.configurator.providers;
 
-import me.jackt.configuratpr.ConfigurationKeyNotFoundException;
-import me.jackt.configuratpr.ConfigurationProvider;
+import me.jackt.configurator.ConfigurationKeyNotFoundException;
+import me.jackt.configurator.ConfigurationProvider;
 
 import java.util.HashMap;
 import java.util.Set;

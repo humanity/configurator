@@ -1,4 +1,4 @@
-package me.jackt.configuratpr;
+package me.jackt.configurator;
 
 /**
  * User: Jack Date: 3/1/14 Time: 11:42 PM
