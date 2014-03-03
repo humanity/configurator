@@ -15,21 +15,9 @@ public class DefaultProvider implements ConfigurationProvider {
 
     {
         data = new HashMap<String, Object>();
-        // TODO add the data here.
+        // TODO add the default data here.
     }
 
-
-    @Override
-    public Object getNumber(String value, Class<? extends Number> clazz) throws ClassCastException {
-        if (data.containsKey(value)) {
-            Object newValue = clazz.cast(data.get(value)); // will be source of exceptions
-            if (newValue != null)
-                return newValue;
-            else return null; // TODO or perhaps throws an exception
-        } else {
-            throw new ConfigurationKeyNotFoundException("Key not found: \"" + value + "\"");
-        }
-    }
 
     @Override
     public String getString(String value) {
@@ -43,5 +31,14 @@ public class DefaultProvider implements ConfigurationProvider {
     @Override
     public Set<String> getKeys() {
         return data.keySet();
+    }
+
+    public boolean hasKey(String key) {
+        return data.containsKey(key);
+    }
+
+
+    public boolean fill() {
+        return false;
     }
 }

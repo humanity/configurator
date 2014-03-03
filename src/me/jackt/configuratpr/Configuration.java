@@ -2,12 +2,10 @@ package me.jackt.configuratpr;
 
 import me.jackt.configuratpr.me.jackt.configurator.providers.DefaultProvider;
 
-import java.util.Set;
-
 /**
  * User: Jack Date: 3/1/14 Time: 11:34 PM
  */
-public abstract class Configuration {
+public class Configuration {
 
     protected ConfigurationProvider normalProvider;
 
@@ -17,12 +15,12 @@ public abstract class Configuration {
         defaultProvider = new DefaultProvider();
     }
 
-    /**
-     * Fill the normal provider with whatever it likes, based on the Constructors it defines.
-     */
-    protected abstract void fillNormal();
-
-
-
+    Configuration(ConfigurationProvider customProvider) {
+        if (customProvider == null) {
+            throw new NullPointerException();
+        } else {
+            normalProvider = customProvider;
+        }
+    }
 
 }
