@@ -32,5 +32,5 @@ public interface ConfigurationProvider {
      * @return a boolean representing whether or not this function actually altered any data. If this pulls from a file,
      *         but no data is changed, this still returns false.
      */
-    boolean fill();
+    boolean fill() throws Exception;
 }
