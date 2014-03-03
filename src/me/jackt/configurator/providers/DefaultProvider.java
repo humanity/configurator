@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- * User: Jack Date: 3/1/14 Time: 11:48 PM
+ * This is not only a default provider, but a sample implementation of a ConfigurationProvider
  */
 public class DefaultProvider implements ConfigurationProvider {
 
