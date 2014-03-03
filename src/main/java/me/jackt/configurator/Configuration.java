@@ -1,6 +1,6 @@
 package me.jackt.configurator;
 
-import me.jackt.configurator.me.jackt.configurator.providers.DefaultProvider;
+import me.jackt.configurator.providers.DefaultProvider;
 
 public class Configuration {
 

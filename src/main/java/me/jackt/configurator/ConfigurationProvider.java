@@ -11,18 +11,19 @@ public interface ConfigurationProvider {
     public String getString(String key) throws ConfigurationKeyNotFoundException;
 
     /**
-     * """" to the keySet method "
-     * @return
-     */
-    public Set<String> getKeys();
-
-    /**
      * Because this is mostly done on Maps, this will mostly correspond to the containsKey method of HashMaps.
      *
      * @param key
      * @return
      */
     public boolean hasKey(String key);
+
+    /**
+     * """" to the keySet method "
+     *
+     * @return
+     */
+    public Set<String> getKeys();
 
     /**
      * This method, because it must be in the interface, will end up public, but it should not be called directly by

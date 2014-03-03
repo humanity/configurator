@@ -1,4 +1,4 @@
-package me.jackt.configurator.me.jackt.configurator.providers;
+package me.jackt.configurator.providers;
 
 import me.jackt.configurator.ConfigurationKeyNotFoundException;
 import me.jackt.configurator.ConfigurationProvider;
